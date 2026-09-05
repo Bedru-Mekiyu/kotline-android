@@ -1,0 +1,23 @@
+name: Repository Validation
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate:
+    name: Repository Verification
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Check File Structure & Verification
+        run: |
+          echo "Checking repository structure..."
+          test -f BookSearchScreen.kt
+          test -f README.md
+          echo "Repository integrity check passed successfully."
