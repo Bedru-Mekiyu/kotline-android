@@ -1,0 +1,19 @@
+# Built application files
+*.apk
+*.aar
+*.aab
+
+# Files for the Gradle build system
+.gradle/
+build/
+
+# Android Studio / IntelliJ IDEA files
+.idea/
+*.iml
+.navigation/
+captures/
+
+# OS / Local generated files
+.DS_Store
+Thumbs.db
+*.log
